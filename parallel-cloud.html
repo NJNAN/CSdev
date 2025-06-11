@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>并行计算与云时代 (1990s-2010s) | 计算机简史科普站</title>
+    <meta name="description" content="并行计算与云计算革命 - 从多核到分布式计算">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">ComputerHistory.dev</a>
+            <ul class="nav-links">
+                <li><a href="index.html">首页</a></li>
+                <li><a href="vacuum-tube.html">真空管时代</a></li>
+                <li><a href="transistor.html">晶体管时代</a></li>
+                <li><a href="integrated-circuit.html">集成电路时代</a></li>
+                <li><a href="microprocessor.html">微处理器时代</a></li>
+                <li><a href="parallel-cloud.html">并行云时代</a></li>
+                <li><a href="ai-era.html">AI新时代</a></li>
+                <li><a href="milestones.html">技术里程碑</a></li>
+                <li><a href="references.html">参考资料</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-title">
+            <div class="container">
+                <h1>并行计算与云时代</h1>
+                <p class="mono">1990s - 2010s • 分布式计算的兴起</p>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 style="color: var(--primary-color); margin-bottom: 2rem;">并行计算的崛起</h2>
+            <div class="card">
+                <p style="font-size: 1.1rem; line-height: 1.8;">
+                    随着单核处理器性能提升遇到物理极限，<span class="highlight">并行计算</span>成为突破性能瓶颈的关键技术。
+                    从1990年代的超级计算机集群，到2000年代的多核处理器普及，再到2010年代的云计算爆发，
+                    计算架构发生了根本性变革。<span class="highlight">摩尔定律的放缓</span>迫使整个行业转向
+                    "多核心、多处理器、多机器"的并行计算模式，重新定义了计算性能的提升路径。
+                </p>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 style="color: var(--primary-color); margin-bottom: 2rem;">并行架构演进</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>超级计算机集群 (1990s)</h3>
+                        <div class="year">大规模并行处理</div>
+                        <p><strong>Beowulf集群</strong><br>
+                        使用商用硬件构建高性能计算集群，大幅降低了超级计算机的成本，
+                        开创了分布式并行计算的先河。代表：Cray T3E、IBM SP系列。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>对称多处理器 (1990s-2000s)</h3>
+                        <div class="year">SMP架构普及</div>
+                        <p><strong>共享内存并行</strong><br>
+                        多个处理器共享同一内存系统，操作系统统一调度，
+                        为服务器和工作站提供了高性能计算能力。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>多核处理器 (2005+)</h3>
+                        <div class="year">并行计算民主化</div>
+                        <p><strong>片上并行系统</strong><br>
+                        Intel Core Duo、AMD Athlon X2等双核处理器问世，
+                        将并行计算能力带入个人电脑，改变了软件设计理念。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>GPU通用计算 (2007+)</h3>
+                        <div class="year">GPGPU革命</div>
+                        <p><strong>大规模并行处理</strong><br>
+                        NVIDIA CUDA、AMD Stream等技术将图形处理器用于通用计算，
+                        为科学计算、机器学习提供了强大的并行计算平台。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 style="color: var(--primary-color); margin-bottom: 2rem;">多核处理器发展</h2>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>处理器</th>
+                            <th>发布年份</th>
+                            <th>核心数</th>
+                            <th>晶体管数</th>
+                            <th>制程工艺</th>
+                            <th>基础频率</th>
+                            <th>典型应用</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Intel Pentium D</td>
+                            <td>2005</td>
+                            <td>2</td>
+                            <td>230M</td>
+                            <td>90nm</td>
+                            <td>2.8-3.2 GHz</td>
+                            <td>桌面PC</td>
+                        </tr>
+                        <tr>
+                            <td>Intel Core 2 Duo</td>
+                            <td>2006</td>
+                            <td>2</td>
+                            <td>291M</td>
+                            <td>65nm</td>
+                            <td>1.8-3.0 GHz</td>
+                            <td>笔记本/桌面</td>
+                        </tr>
+                        <tr>
+                            <td>Intel Core 2 Quad</td>
+                            <td>2007</td>
+                            <td>4</td>
+                            <td>582M</td>
+                            <td>65nm</td>
+                            <td>2.4-3.0 GHz</td>
+                            <td>高端桌面</td>
+                        </tr>
+                        <tr>
+                            <td>Intel Core i7 (1st gen)</td>
+                            <td>2008</td>
+                            <td>4</td>
+                            <td>731M</td>
+                            <td>45nm</td>
+                            <td>2.66-3.33 GHz</td>
+                            <td>高性能计算</td>
+                        </tr>
+                        <tr>
+                            <td>AMD Ryzen 7 1800X</td>
+                            <td>2017</td>
+                            <td>8</td>
+                            <td>4.8B</td>
+                            <td>14nm</td>
+                            <td>3.6 GHz</td>
+                            <td>内容创作</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 style="color: var(--primary-color); margin-bottom: 2rem;">云计算的崛起</h2>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <h3>☁️ Amazon EC2 (2006)</h3>
+                    <p><strong>弹性计算云</strong><br>
+                    亚马逊推出的弹性计算云服务开创了现代云计算模式，
+                    用户可以按需租用虚拟服务器，彻底改变了IT资源的使用方式。</p>
+                </div>
+                
+                <div class="card">
+                    <h3>🔍 Google MapReduce (2004)</h3>
+                    <p><strong>大数据处理框架</strong><br>
+                    谷歌的分布式计算框架为大规模数据处理提供了编程模型，
+                    催生了Hadoop等开源大数据生态系统。</p>
+                </div>
+                
+                <div class="card">
+                    <h3>🐳 虚拟化技术</h3>
+                    <p><strong>资源池化</strong><br>
+                    VMware、Xen等虚拟化技术实现了硬件资源的抽象和池化，
+                    为云计算提供了技术基础。</p>
+                </div>
+                
+                <div class="card">
+                    <h3>📊 分布式存储</h3>
+                    <p><strong>海量数据管理</strong><br>
+                    GFS、HDFS等分布式文件系统，以及NoSQL数据库的兴起，
+                    解决了海量数据的存储和处理问题。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 style="color: var(--primary-color); margin-bottom: 2rem;">云服务概述</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>IaaS - 基础设施即服务</h3>
+                        <div class="year">虚拟化基础设施</div>
+                        <p>提供虚拟机、存储、网络等基础IT资源，用户可以在上面部署任何软件系统。
+                        代表：Amazon EC2、Microsoft Azure、Google Compute Engine。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>PaaS - 平台即服务</h3>
+                        <div class="year">开发平台服务</div>
+                        <p>提供应用开发、部署、运行平台，开发者专注于业务逻辑开发。
+                        代表：Google App Engine、Heroku、微软Azure平台。</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <h3>SaaS - 软件即服务</h3>
+                        <div class="year">应用软件服务</div>
+                        <p>直接提供可用的软件应用，用户通过浏览器即可使用。
+                        代表：Salesforce、Office 365、Google Workspace。</p>
+                    </div>
+                </div>
+            </timeline>
+        </section>
+
+        <section class="container">
+            <h2 style="color: var(--primary-color); margin-bottom: 2rem;">技术创新</h2>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <h3>🔄 分布式算法</h3>
+                    <p><strong>一致性与容错</strong><br>
+                    Paxos、Raft等分布式一致性算法，以及CAP定理的提出，
+                    为构建可靠的分布式系统提供了理论基础。</p>
+                </div>
+                
+                <div class="card">
+                    <h3>🐘 大数据生态</h3>
+                    <p><strong>Hadoop生态系统</strong><br>
+                    HDFS、MapReduce、Spark、Kafka等技术栈的发展，
+                    建立了完整的大数据处理生态系统。</p>
+                </div>
+                
+                <div class="card">
+                    <h3>📦 容器技术</h3>
+                    <p><strong>应用封装与部署</strong><br>
+                    Docker容器技术和Kubernetes编排系统的出现，
+                    简化了应用的打包、部署和管理。</p>
+                </div>
+                
+                <div class="card">
+                    <h3>🌐 微服务架构</h3>
+                    <p><strong>分布式系统设计</strong><br>
+                    将大型应用拆分为小的、独立的服务，
+                    提高了系统的可扩展性和可维护性。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 style="color: var(--primary-color); margin-bottom: 2rem;">超级计算机发展</h2>
+            
+            <div class="table-container">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>系统名称</th>
+                            <th>年份</th>
+                            <th>峰值性能</th>
+                            <th>处理器数量</th>
+                            <th>架构</th>
+                            <th>主要应用</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>ASCI Red</td>
+                            <td>1996</td>
+                            <td>1.3 TFLOPS</td>
+                            <td>9,298</td>
+                            <td>Intel Pentium Pro</td>
+                            <td>核武器模拟</td>
+                        </tr>
+                        <tr>
+                            <td>IBM Blue Gene/L</td>
+                            <td>2004</td>
+                            <td>280.6 TFLOPS</td>
+                            <td>131,072</td>
+                            <td>PowerPC 440</td>
+                            <td>科学计算</td>
+                        </tr>
+                        <tr>
+                            <td>IBM Roadrunner</td>
+                            <td>2008</td>
+                            <td>1.026 PFLOPS</td>
+                            <td>122,400</td>
+                            <td>AMD + Cell</td>
+                            <td>核物理研究</td>
+                        </tr>
+                        <tr>
+                            <td>Tianhe-2</td>
+                            <td>2013</td>
+                            <td>33.86 PFLOPS</td>
+                            <td>3,120,000</td>
+                            <td>Intel Xeon + Xeon Phi</td>
+                            <td>天气预报/工程仿真</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 style="color: var(--primary-color); margin-bottom: 2rem;">产业影响</h2>
+            
+            <div class="card-grid">
+                <div class="card">
+                    <h3>🚀 创业门槛降低</h3>
+                    <p>云计算服务让初创公司无需巨额IT投资就能获得企业级计算资源，
+                    催生了大量互联网创业公司，推动了数字经济发展。</p>
+                </div>
+                
+                <div class="card">
+                    <h3>📊 大数据时代</h3>
+                    <p>分布式计算技术使得处理PB级数据成为可能，
+                    开启了大数据时代，数据成为新的生产要素。</p>
+                </div>
+                
+                <div class="card">
+                    <h3>🌍 全球化服务</h3>
+                    <p>云计算基础设施的全球部署使得互联网服务能够快速扩展到全球市场，
+                    推动了经济全球化进程。</p>
+                </div>
+                
+                <div class="card">
+                    <h3>🔄 敏捷开发</h3>
+                    <p>云平台和容器技术改变了软件开发模式，
+                    DevOps、持续集成/持续部署成为标准实践。</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="container">
+            <h2 style="color: var(--primary-color); margin-bottom: 2rem;">历史意义</h2>
+            <div class="card">
+                <p style="font-size: 1.1rem; line-height: 1.8;">
+                    并行计算与云时代的最大贡献是<span class="highlight">重新定义了计算资源的组织和使用方式</span>。
+                    从单机计算到分布式计算，从私有设备到共享服务，这一转变不仅解决了单核性能增长放缓的问题，
+                    还催生了全新的商业模式和技术生态。<span class="highlight">云计算的普及</span>让计算资源
+                    变成了像水电一样的公共服务，大幅降低了创新门槛，推动了人工智能、物联网、
+                    区块链等新兴技术的快速发展。这个时代为即将到来的AI革命奠定了坚实的基础设施基础。
+                </p>
+            </div>
+        </section>
+
+        <section class="container">
+            <div style="text-align: center; margin: 3rem 0;">
+                <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                    <a href="microprocessor.html" class="btn-outline btn">← 微处理器时代</a>
+                    <a href="ai-era.html" class="btn">下一个时代: AI新时代 →</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-links">
+                <a href="index.html">首页</a>
+                <a href="milestones.html">技术里程碑</a>
+                <a href="references.html">参考资料</a>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2024 计算机简史科普站 | 用于教育目的的前端课程作业</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
